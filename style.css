@@ -1,17 +1,4 @@
-@media screen and (max-width: 600px) {
-    /* mobile */
-    .container {
-        padding: 10px;
-    }
-    label, select, button, input {
-        display : block;
-        width: 100%;
-    }
-    .inline {
-        display : block;
-        width: 100%;
-    }
-}
+
 
 /* style.css */
 body {
