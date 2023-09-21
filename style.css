@@ -1,5 +1,3 @@
-
-
 /* style.css */
 body {
     font-family: Arial, sans-serif;
@@ -22,8 +20,7 @@ select, button {
     margin-bottom: 10px;
 }
 input {
-    display: block;
-    width: 30%;
+    width: 50%;
     padding: 10px;
     margin-bottom: 10px;    
 }
@@ -37,8 +34,8 @@ th, td {
     border: 1px solid #ccc;
 }
 
-.inline {
-    display: block;
-    margin-right: 5px;
-    width: 30%;
-  }
+/* 使用CSS來調整元素顯示為inline-block，實現同一行顯示 */
+label, input[type="checkbox"] {
+    display: inline-block;
+    margin-right: 10px; /* 可以調整元素之間的間距 */
+}
