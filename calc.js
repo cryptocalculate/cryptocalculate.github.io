@@ -34,9 +34,16 @@ function calculatePosition() {
     
     // 初始化第一倉的數據
     const firstPosition = {};
+    if (numPositions ==1){
+        firstPosition.margin =  margin;
+    }
+    else {
+        firstPosition.margin =  margin * 0.3;
+    }
     firstPosition.position = '第1倉';
     firstPosition.leverage = leverage;
     firstPosition.entryPrice = openPrice;
+    
     
     
     if (direction === 'long') {
@@ -62,6 +69,7 @@ function calculatePosition() {
         
         
         if (i==2){
+            rowData.margin = margin * 0.3
             if (direction === 'long') {
                 rowData.stopLossPrice = rowData.entryPrice - distance;
             } 
@@ -70,6 +78,7 @@ function calculatePosition() {
             }
         }
         else {
+            rowData.margin =  margin * 0.4
             rowData.stopLossPrice = '系統強平'
         }
         
@@ -91,12 +100,15 @@ function calculatePosition() {
         const cell3 = newRow.insertCell(2);
         const cell4 = newRow.insertCell(3);
         const cell5 = newRow.insertCell(4);
+        const cell6 = newRow.insertCell(5);
+
         
         cell1.innerHTML = data.position;
-        cell2.innerHTML = data.leverage;
-        cell3.innerHTML = data.entryPrice;
-        cell4.innerHTML = data.stopLossPrice;
-        cell5.innerHTML = data.targetPrice1;
+        cell2.innerHTML = data.margin;
+        cell3.innerHTML = data.leverage;
+        cell4.innerHTML = data.entryPrice;
+        cell5.innerHTML = data.stopLossPrice;
+        cell6.innerHTML = data.targetPrice1;
     }
 }
 

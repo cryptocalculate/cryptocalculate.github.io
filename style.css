@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
 }
 .container {
-    max-width: 400px;
+    max-width: 500px;
     margin: 0 auto;
     padding: 20px;
     border: 1px solid #ccc;
@@ -21,7 +21,7 @@ select, button {
 }
 input {
     display: inline-block;
-    width: 50px;
+    width: 100px;
     padding: 10px;
     margin-bottom: 10px;    
 }
