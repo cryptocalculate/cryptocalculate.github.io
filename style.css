@@ -22,7 +22,7 @@ select, button {
     margin-bottom: 10px;
 }
 input {
-    display: inline-block;
+    display: block;
     width: 30%;
     padding: 10px;
     margin-bottom: 10px;    
@@ -38,7 +38,7 @@ th, td {
 }
 
 .inline {
-    display: inline-block;
+    display: block;
     margin-right: 5px;
     width: 30%;
   }
