@@ -64,7 +64,7 @@ function calculatePosition() {
         
         // 第二倉和第三倉的入場點位是前一倉的止損點位
         rowData.entryPrice = positionData[i - 2].stopLossPrice;
-        rowData.targetPrice1 = positionData[i - 2].entryPrice;
+        rowData.targetPrice1 = positionData[0].entryPrice;
 
         
         
